@@ -1,0 +1,46 @@
+@import 'nav';
+@import 'homepage';
+@import '_colors';
+@import 'article';
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: "Montserrat",sans-serif;
+}
+body::-webkit-scrollbar{
+  width:8px;
+}
+body::-webkit-scrollbar-track{
+  border-radius: 10px;
+  // background: $light-gray;
+}
+body::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background: $light-gray;
+}
+
+.container{
+  padding: 4rem 10rem;
+}
+button:active{
+  transform: translateY(-5%);
+  transition: all .3s ease;
+}
+
+.info-grid i{
+  color: $yellow;
+}
+
+@media (max-width:570px){
+  .container{
+      padding: 3rem 2rem;
+  }
+
+}
+
+
